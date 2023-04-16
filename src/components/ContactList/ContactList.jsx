@@ -5,7 +5,7 @@ import ContactItem from '../ContactItem';
 const ContactList = ({contacts,onDeleteContact}) => {
     return (
         <ul className={css.list}>
-            {contacts?.map(contact => (
+            {contacts.map(contact => (
                 <ContactItem
                     contact={contact}
                     onDeleteContact={onDeleteContact}

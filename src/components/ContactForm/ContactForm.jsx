@@ -1,13 +1,9 @@
 import { Component } from "react";
-import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 
 
 class ContactForm extends Component {
-    // static propTypes = {
-    //     onSubmit: PropTypes.func.isRequired,
-    // };
     state = {
         name: '',
         number: '',
@@ -56,7 +52,7 @@ class ContactForm extends Component {
                 />
                 </label>
                 <label>
-                    Number
+                    <p className={css.form__label}>Number</p>
                     <input
                         className={css.form__input}
                         type="tel"

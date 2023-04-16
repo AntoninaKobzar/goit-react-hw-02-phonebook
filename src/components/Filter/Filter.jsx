@@ -18,9 +18,7 @@ const Filter = ({ value, onChange }) => {
         </label>
     );
 };
-Filter.defaultProps = {
-    value: '',
-};
+
 
 Filter.propTypes = {
     value: PropTypes.string,
