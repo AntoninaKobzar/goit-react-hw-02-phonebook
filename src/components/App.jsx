@@ -17,7 +17,7 @@ class App extends Component {
 
   addContact = newContact => {
     const duplicateName = this.state.contacts.find(
-      contact => contact.name.toLowerCase === newContact.name.toLowerCase,
+      contact => contact.name.toLowerCase() === newContact.name.toLowerCase(),
     );
     if (duplicateName) {
       alert(`${newContact.name} is already in contacts`);
